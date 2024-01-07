@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro'
+import PortadaPrincipal from '../components/PortadaPrincipal.astro'
+---
+
+<Layout title="Welcome to Astro.">
+	<Header/>
+	<main>
+	<PortadaPrincipal>
+		<video muted autoplay loop slot="portada-fondo" class="object-center object-cover h-full w-full" src=`/LamboPortadaLanding.mp4`></video>
+	</PortadaPrincipal>
+	</main>
+</Layout>

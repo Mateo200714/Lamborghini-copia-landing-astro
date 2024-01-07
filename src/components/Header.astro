@@ -1,0 +1,129 @@
+---
+import Logo from "../components/Logo.astro";
+import PreguntasAyuda from "../components/PreguntasAyuda.astro";
+import Buscar from "../components/Buscar.astro";
+import Menu from "../components/Menu.astro";
+---
+
+<header
+  class="text-gray-100 bg-zinc py-3 px-10 flex items-center fixed top-0 w-full h-24 z-40"
+>
+  <div
+    class="ml-4 w-20 active:border-2 p-2 rounded active:border-gray-100 active:bg-white/5 pointer"
+  >
+    <a href="https://www.lamborghini.com/es-en">
+      <Logo class="w-full min-w-20" />
+    </a>
+  </div>
+
+  <nav class="flex flex-grow justify-between basis-0 ml-8">
+    <ul
+      class="flex font-Lambo text-sm [&>div>li>a]:transition-colors [&>div>li>a]:duration-600 [&>div>li>a]:font-thin[&>div>li>a]:inline-block [&>div]:mr-4 [&>div]:pointer"
+    >
+      <div class="[&>.barra-inferior-opcion]:hover:w-full">
+        <div
+          class="border-2 border-transparent rounded p-1 active:border-gray-100 active:bg-white/5 transition-all duration-200"
+        >
+          <li><a href="#"> MODELOS</a></li>
+        </div>
+        <div
+          class="barra-inferior-opcion bg-white h-[1px] w-0 mt-0.5 transition-all duration-500"
+        >
+        </div>
+      </div>
+      <div class="[&>.barra-inferior-opcion]:hover:w-full">
+        <div
+          class="border-2 border-transparent rounded p-1 active:border-gray-100 active:bg-white/5 transition-all duration-200"
+        >
+          <li><a href="#"> BEYOND</a></li>
+        </div>
+        <div
+          class="barra-inferior-opcion bg-white h-[1px] w-0 mt-0.5 transition-all duration-500"
+        >
+        </div>
+      </div>
+      <div class="[&>.barra-inferior-opcion]:hover:w-full">
+        <div
+          class="border-2 border-transparent rounded p-1 active:border-gray-100 active:bg-white/5 transition-all duration-200"
+        >
+          <li><a href="#"> SERVICIOS AL CLIENTE</a></li>
+        </div>
+        <div
+          class="barra-inferior-opcion bg-white h-[1px] w-0 mt-0.5 transition-all duration-500"
+        >
+        </div>
+      </div>
+      <div class="[&>.barra-inferior-opcion]:hover:w-full">
+        <div
+          class="border-2 border-transparent rounded p-1 active:border-gray-100 active:bg-white/5 transition-all duration-200"
+        >
+          <li><a href="#">MOTORSPORT</a></li>
+        </div>
+        <div
+          class="barra-inferior-opcion bg-white h-[1px] w-0 mt-0.5 transition-all duration-500"
+        >
+        </div>
+      </div>
+    </ul>
+  </nav>
+  <nav class="flex flex-grow justify-end basis-0">
+    <ul
+      class="flex font-Lambo text-sm [&>div>li>a]:transition-colors [&>div>li>a]:duration-600 [&>div>li>a]:inline-block [&>div]:mr-4"
+    >
+      <div class="[&>.barra-inferior-opcion]:hover:w-full">
+        <div
+          class="border-2 border-transparent rounded p-1 active:border-gray-100 active:bg-white/5 transition-all duration-200"
+        >
+          <li><a href="#">CONCESIONARIOS</a></li>
+        </div>
+        <div
+          class="barra-inferior-opcion bg-white h-[1px] w-0 mt-0.5 transition-all duration-500"
+        >
+        </div>
+      </div>
+      <div class="[&>.barra-inferior-opcion]:hover:w-full">
+        <div
+          class="border-2 border-transparent rounded p-1 active:border-gray-100 active:bg-white/5 transition-all duration-200"
+        >
+          <li><a href="#">MUSEO</a></li>
+        </div>
+        <div
+          class="barra-inferior-opcion bg-white h-[1px] w-0 mt-0.5 transition-all duration-500"
+        >
+        </div>
+      </div>
+      <div class="[&>.barra-inferior-opcion]:hover:w-full">
+        <div
+          class="border-2 border-transparent rounded p-1 active:border-gray-100 active:bg-white/5 transition-all duration-200"
+        >
+          <li><a href="#">STORE</a></li>
+        </div>
+        <div
+          class="barra-inferior-opcion bg-white h-[1px] w-0 mt-0.5 transition-all duration-500"
+        >
+        </div>
+      </div>
+      <div class="ml-4">
+        <div
+          class="border-2 border-transparent rounded p-1 active:border-gray-100 active:bg-white/5 transition-all duration-200"
+        >
+          <li><PreguntasAyuda /></li>
+        </div>
+      </div>
+      <div>
+        <div
+          class="border-2 border-transparent rounded p-1 active:border-gray-100 active:bg-white/5 transition-all duration-200"
+        >
+          <li><Buscar /></li>
+        </div>
+      </div>
+      <div>
+        <div
+          class="border-2 border-transparent rounded p-1 active:border-gray-100 active:bg-white/5 transition-all duration-200"
+        >
+          <li><Menu /></li>
+        </div>
+      </div>
+    </ul>
+  </nav>
+</header>

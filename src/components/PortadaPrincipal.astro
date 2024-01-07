@@ -1,0 +1,26 @@
+---
+import BtRight from "./BtRight.astro";
+---
+
+<section>
+  <div
+    class="absolute top-0 justify-center w-[40%] h-full flex items-start flex-col text-gray-100 ml-24 col-xl-6 col-md-7 col-sm-10 col-12 offset-sm-1 text-sans leading-none"
+  >
+    <h4 class="text-3xl font-semibold mb-4">DESIGNED BY NEW DESIRES</h4>
+    <h1 class="text-8xl font-bold">LAMBORGHINI LANZADOR</h1>
+    <div class="pointer transition-all duration-200 mt-4"><BtRight class="pointer [&>.path1]:hover:fill-[white][&>.path2]:hover:fill-[black]"/></div>
+  </div>
+  <div class="absolute top-0 bottom-0 -z-10 right-0 left-0">
+    <slot name="portada-fondo" />
+  </div>
+</section>
+<div
+  class="absolute flex items-center bottom-0 left-0 text-white z-40 text-center p-1 leading-tight bg-[rgba(0,0,0,0.75)]"
+>
+  <span class="relative"
+    >Valores de consumo de combustible y emisiones de todos los coches presentes
+    en esta página*: Consumo de combustible en ciclo combinado: 14,1-14,5
+    l/100km (WLTP); Emisiones de CO₂ en ciclo combinado: 320-328 g/km (WLTP); En
+    proceso de aprobación, no disponible para la venta: Revuelto</span
+  >
+</div>
